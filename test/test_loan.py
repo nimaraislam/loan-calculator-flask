@@ -5,7 +5,7 @@ def test_loan_interest_month():
     loan = Loan(2000,3,2,"M")
     loan.calculate_loan_interest()
 
-    assert loan.total_interest == 100#120.00
+    assert loan.total_interest == 120.00
 
 def test_loan_interest_year():
     loan =  Loan(2000,3,2,"Y")
