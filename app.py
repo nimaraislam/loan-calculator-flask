@@ -13,12 +13,12 @@ def home():
     )
     interest = loan.calculate_loan_interest()
     total = loan.calculate_final_amount()
-    return f""" Loan Calculator
-                --------------- <br><br>
+    return f""" Loan Calculator<br>
+                ------------------------------------- <br><br>
                 Principal Amount: {loan.principal_amount} Kr<br>
                 Interest Rate: {loan.interest_rate}% <br> 
                 Term: {loan.term}{loan.month_or_year} <br>
-                --------------------------------- <br>
+                ------------------------------------- <br>
                 Interest: {interest} kr<br>
                 Total: {total} kr"""""
 
