@@ -3,7 +3,7 @@ class Loan:
     def __init__(self,principal_amount: float,interest_rate: float,term: int,month_or_year: str):
         if not isinstance(principal_amount,(int,float)):
             raise ValueError("Amount should be a number.")
-        if principal_amount <= 0:
+        if principal_amount < 0:
             raise ValueError("Amount should be greater than zero.")
         if not isinstance(interest_rate,(int,float)):
             raise ValueError("Interest rate should be a number.")
